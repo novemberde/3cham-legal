@@ -11,7 +11,7 @@
 <li>기기 안에 저장되는 캐릭터 선택, 게임 통계, 소리·진동 설정: 개인 설정과 로컬 게임 진행.</li>
 </ul><p>이름, 전화번호, 위치 정보는 게임을 위해 요청하지 않습니다. 광고, 분석 도구, 인앱 구매, 채팅 기능은 없습니다. 플레이어 정보를 광고 추적에 사용하거나 판매하지 않습니다.</p>
 <h2>보관 기간과 저장 위치</h2><p>온라인 게임 정보는 AWS 서울 리전의 DynamoDB에 저장됩니다. 게스트 플레이어 정보의 만료 시간은 약 30일, 매치 기록은 약 2시간, 친구방은 약 10분, 연결 정보는 최대 24시간으로 설정됩니다. 기술 로그는 14일간 보관합니다. DynamoDB의 만료 항목 삭제는 비동기로 진행되어 실제 삭제 시점은 만료 시간보다 늦을 수 있습니다. 기기에 저장한 정보는 앱 데이터 삭제 또는 앱 삭제 전까지 남을 수 있으며, iOS 보안 저장소의 게스트 토큰은 앱 삭제 후에도 기기 정책에 따라 남을 수 있지만 30일 후 효력을 잃습니다.</p>
-<h2>처리 위탁과 국외 이용</h2><p>온라인 서비스는 Amazon Web Services의 API Gateway, Lambda, DynamoDB, CloudWatch를 이용합니다. 다른 국가에서 접속하면 정보가 대한민국에 있는 서버로 전송됩니다. 온라인 상대에게는 대전 중 캐릭터 외형, 손 선택 공개 후의 선택과 결과가 표시됩니다.</p>
+<h2>처리 위탁과 국외 이용</h2><p>온라인 서비스는 Amazon Web Services의 API Gateway, Lambda, DynamoDB, CloudWatch를 이용합니다. 다른 국가에서 접속하면 정보가 대한민국에 있는 서버로 전송됩니다. 온라인 상대에게는 대전 중 무작위 플레이어 ID와 캐릭터 외형, 손 선택 공개 후의 선택과 결과가 표시됩니다.</p>
 <h2>선택과 삭제 요청</h2><p>로컬 모드는 인터넷 연결이나 온라인 게스트 ID 없이 이용할 수 있습니다. 온라인 정보의 조기 삭제나 개인정보 관련 문의는 아래 이메일로 보내주세요. 플레이어 ID를 알려주시면 해당 데이터를 찾는 데 도움이 됩니다. 인증 토큰은 이메일로 보내지 마세요. 요청을 확인하고 처리 결과를 안내하겠습니다.</p>
 <p class="note">문의: <a href="mailto:novemberde1@gmail.com?subject=3CHAM%20privacy">novemberde1@gmail.com</a></p>
 <h2>변경 안내</h2><p>방침이 바뀌면 이 페이지의 시행일과 내용을 갱신합니다.</p></section>
@@ -24,7 +24,7 @@
 <li>Character selection, game statistics, and sound or haptic settings stored on your device: personal preferences and local play.</li>
 </ul><p>We do not ask for your name, phone number, or location to play. The app has no advertising, analytics SDK, in-app purchases, or chat. We do not sell player data or use it for advertising tracking.</p>
 <h2>Retention and storage</h2><p>Online game data is stored in DynamoDB in AWS's Seoul region. Guest player records are set to expire after about 30 days, match records after about 2 hours, friend rooms after about 10 minutes, and connection records within 24 hours. Technical logs are retained for 14 days. DynamoDB deletes expired records asynchronously, so actual removal can happen later. Device data may remain until you clear the app's data or uninstall it. On iOS, a guest token in secure storage may remain under device policy after uninstall, but expires after 30 days.</p>
-<h2>Processors and international use</h2><p>The online service uses Amazon Web Services API Gateway, Lambda, DynamoDB, and CloudWatch. If you connect from outside South Korea, your data is sent to servers in South Korea. During a match, your opponent can see your character appearance, revealed move, and result.</p>
+<h2>Processors and international use</h2><p>The online service uses Amazon Web Services API Gateway, Lambda, DynamoDB, and CloudWatch. If you connect from outside South Korea, your data is sent to servers in South Korea. During a match, your opponent can see your random player ID, character appearance, revealed move, and result.</p>
 <h2>Choices and deletion</h2><p>You can play local mode without an internet connection or online guest ID. To request early deletion of online data or ask a privacy question, email us below. Your player ID helps us locate the record. Never email your authentication token. We will review your request and reply with the outcome.</p>
 <p class="note">Contact: <a href="mailto:novemberde1@gmail.com?subject=3CHAM%20privacy">novemberde1@gmail.com</a></p>
 <h2>Changes</h2><p>If this policy changes, we will update the effective date and content on this page.</p></section>
